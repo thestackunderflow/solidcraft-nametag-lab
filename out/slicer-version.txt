@@ -1,0 +1,2 @@
+PrusaSlicer-2.9.2+UNKNOWN based on Slic3r (with GUI support)
+config_version = 2.2.7

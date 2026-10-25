@@ -1,0 +1,40 @@
+{
+ "print_settings_id": "0.20mm SPEED @MK4S 0.4",
+ "filament_settings_id": "\"Prusament PLA @MK4S\"",
+ "printer_settings_id": "Original Prusa MK4S 0.4 nozzle",
+ "perimeter_generator": "arachne",
+ "min_feature_size": "25%",
+ "min_bead_width": "85%",
+ "extrusion_width": "0.45",
+ "perimeter_extrusion_width": "0.45",
+ "external_perimeter_extrusion_width": "0.45",
+ "top_infill_extrusion_width": "0.42",
+ "solid_infill_extrusion_width": "0.45",
+ "infill_extrusion_width": "0.45",
+ "first_layer_extrusion_width": "0.5",
+ "slice_closing_radius": "0.049",
+ "thin_walls": "0",
+ "perimeters": "2",
+ "top_solid_layers": "5",
+ "layer_height": "0.2",
+ "first_layer_height": "0.2",
+ "nozzle_diameter": "0.4",
+ "binary_gcode": "0",
+ "arc_fitting": "emit_center",
+ "wall_transition_length": "100%",
+ "wall_transition_angle": "10",
+ "wall_distribution_count": "1",
+ "wall_transition_filter_deviation": "25%",
+ "gcode_resolution": "0.008",
+ "elefant_foot_compensation": "0.2",
+ "xy_size_compensation": "0",
+ "_source": "the G-code footer of out/raised-h2/tag.gcode (what the slicer actually used)",
+ "_resolved_mm_at_nozzle_0.4": {
+  "min_feature_size": 0.1,
+  "min_bead_width": 0.34
+ },
+ "_slicer": [
+  "PrusaSlicer-2.9.2+UNKNOWN based on Slic3r (with GUI support)",
+  "config_version = 2.2.7"
+ ]
+}

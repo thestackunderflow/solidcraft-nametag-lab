@@ -1,0 +1,14 @@
+{
+ "written": "25 Oct 2026, before agent run 1 (plan rev 2.1 section 3; thresholds set after the probe, before any run)",
+ "how": "the lab exports the run's saved design (every body), slices it with PrusaSlicer 2.9.2 and the stock 0.20mm SPEED @MK4S 0.4 + Prusament PLA @MK4S + Original Prusa MK4S 0.4 nozzle presets (only --binary-gcode=0), and measures every layer that holds text, found from the run's own design (raised: above the tag's top face; engraved: the slots below it)",
+ "pass_when_all": [
+  "both rows found: row 1 has 4 letter pieces (ALEX), row 2 (the smaller row) has 6 (GYM BAG, the space has none)",
+  "glyph and counter counts of both rows match the design on every text layer (no letter splits, merges, vanishes, no counter or island lost)",
+  "raised: each row-2 letter's planned area is within 15% of its designed area (0.85 to 1.15) and at most 25% of it uncovered",
+  "engraved: each row-2 slot's open area is 0.85 to 1.15 of its designed area, at most 25% of it filled, and each plastic island inside a letter at least 50% printed",
+  "the key-ring hole is open on every layer (at least half its area free of plastic)"
+ ],
+ "fail_also_when": ["row 2 missing or with a different number of letters", "the text is not on the tag (no text layers found)",
+                    "the text is a separate body (two or more bodies in the saved design)", "no G-code produced", "no saved design"],
+ "reported": ["the cap height (mm) and mode (raised / engraved) each run chose", "whether its session log shows it compared text size with the nozzle or the slicer"]
+}

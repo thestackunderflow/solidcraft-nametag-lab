@@ -1,0 +1,698 @@
+{
+ "case": "engraved-h5",
+ "mode": "engraved",
+ "line2_cap_mm": 5.0,
+ "letter_layers": [
+  2.6,
+  2.8,
+  3.0
+ ],
+ "layers": {
+  "2.6": {
+   "slice_z": 2.5,
+   "n_design_letters": [
+    4,
+    6
+   ],
+   "letters": {
+    "A1_0": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 1,
+     "islands_kept": 1,
+     "island_area_printed_ratio": [
+      0.954
+     ],
+     "island_area_mm2": [
+      5.8033
+     ],
+     "open_area_ratio": 1.002,
+     "filled_frac": 0.005,
+     "bead_width_min": 0.347,
+     "bead_width_max": 0.64,
+     "design_area_mm2": 19.2948,
+     "design_break_width_mm": 0.819,
+     "letter": "A",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "A1_0"
+    },
+    "L1_1": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.993,
+     "filled_frac": 0.008,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.605,
+     "design_area_mm2": 12.2563,
+     "design_break_width_mm": 1.162,
+     "letter": "L",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "L1_1"
+    },
+    "E1_2": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.001,
+     "filled_frac": 0.001,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.552,
+     "design_area_mm2": 21.7738,
+     "design_break_width_mm": 1.085,
+     "letter": "E",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "E1_2"
+    },
+    "X1_3": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.003,
+     "filled_frac": 0.001,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.596,
+     "design_area_mm2": 17.6834,
+     "design_break_width_mm": 1.241,
+     "letter": "X",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "X1_3"
+    },
+    "G2_4": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.997,
+     "filled_frac": 0.015,
+     "bead_width_min": 0.357,
+     "bead_width_max": 0.661,
+     "design_area_mm2": 8.9235,
+     "design_break_width_mm": 0.549,
+     "letter": "G",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "G2_4"
+    },
+    "Y2_5": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.999,
+     "filled_frac": 0.006,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.607,
+     "design_area_mm2": 5.3959,
+     "design_break_width_mm": 0.749,
+     "letter": "Y",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "Y2_5"
+    },
+    "M2_6": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.048,
+     "filled_frac": 0.004,
+     "bead_width_min": 0.37,
+     "bead_width_max": 0.605,
+     "design_area_mm2": 11.3062,
+     "design_break_width_mm": 0.482,
+     "letter": "M",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "M2_6"
+    },
+    "B2_7": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 2,
+     "islands_kept": 2,
+     "island_area_printed_ratio": [
+      0.977,
+      0.984
+     ],
+     "island_area_mm2": [
+      3.2245,
+      4.1455
+     ],
+     "open_area_ratio": 1.012,
+     "filled_frac": 0.008,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.623,
+     "design_area_mm2": 9.8259,
+     "design_break_width_mm": 0.374,
+     "letter": "B",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "B2_7"
+    },
+    "A2_8": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 1,
+     "islands_kept": 1,
+     "island_area_printed_ratio": [
+      0.927
+     ],
+     "island_area_mm2": [
+      2.2669
+     ],
+     "open_area_ratio": 1.013,
+     "filled_frac": 0.006,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.617,
+     "design_area_mm2": 7.537,
+     "design_break_width_mm": 0.511,
+     "letter": "A",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "A2_8"
+    },
+    "G2_9": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.993,
+     "filled_frac": 0.019,
+     "bead_width_min": 0.378,
+     "bead_width_max": 0.661,
+     "design_area_mm2": 8.9235,
+     "design_break_width_mm": 0.549,
+     "letter": "G",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "G2_9"
+    }
+   }
+  },
+  "2.8": {
+   "slice_z": 2.7,
+   "n_design_letters": [
+    4,
+    6
+   ],
+   "letters": {
+    "A1_0": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 1,
+     "islands_kept": 1,
+     "island_area_printed_ratio": [
+      0.952
+     ],
+     "island_area_mm2": [
+      5.8033
+     ],
+     "open_area_ratio": 1.003,
+     "filled_frac": 0.005,
+     "bead_width_min": 0.359,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 19.2948,
+     "design_break_width_mm": 0.819,
+     "letter": "A",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "A1_0"
+    },
+    "L1_1": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.993,
+     "filled_frac": 0.009,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.605,
+     "design_area_mm2": 12.2563,
+     "design_break_width_mm": 1.162,
+     "letter": "L",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "L1_1"
+    },
+    "E1_2": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.001,
+     "filled_frac": 0.001,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.552,
+     "design_area_mm2": 21.7738,
+     "design_break_width_mm": 1.085,
+     "letter": "E",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "E1_2"
+    },
+    "X1_3": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.002,
+     "filled_frac": 0.002,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.554,
+     "design_area_mm2": 17.6834,
+     "design_break_width_mm": 1.241,
+     "letter": "X",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "X1_3"
+    },
+    "G2_4": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.996,
+     "filled_frac": 0.016,
+     "bead_width_min": 0.359,
+     "bead_width_max": 0.661,
+     "design_area_mm2": 8.9235,
+     "design_break_width_mm": 0.549,
+     "letter": "G",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "G2_4"
+    },
+    "Y2_5": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.999,
+     "filled_frac": 0.006,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.609,
+     "design_area_mm2": 5.3959,
+     "design_break_width_mm": 0.749,
+     "letter": "Y",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "Y2_5"
+    },
+    "M2_6": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.048,
+     "filled_frac": 0.004,
+     "bead_width_min": 0.37,
+     "bead_width_max": 0.605,
+     "design_area_mm2": 11.3062,
+     "design_break_width_mm": 0.482,
+     "letter": "M",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "M2_6"
+    },
+    "B2_7": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 2,
+     "islands_kept": 2,
+     "island_area_printed_ratio": [
+      0.977,
+      0.985
+     ],
+     "island_area_mm2": [
+      3.2245,
+      4.1455
+     ],
+     "open_area_ratio": 1.012,
+     "filled_frac": 0.007,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.623,
+     "design_area_mm2": 9.8259,
+     "design_break_width_mm": 0.374,
+     "letter": "B",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "B2_7"
+    },
+    "A2_8": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 1,
+     "islands_kept": 1,
+     "island_area_printed_ratio": [
+      0.927
+     ],
+     "island_area_mm2": [
+      2.2669
+     ],
+     "open_area_ratio": 1.013,
+     "filled_frac": 0.007,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.619,
+     "design_area_mm2": 7.537,
+     "design_break_width_mm": 0.511,
+     "letter": "A",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "A2_8"
+    },
+    "G2_9": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.993,
+     "filled_frac": 0.019,
+     "bead_width_min": 0.378,
+     "bead_width_max": 0.661,
+     "design_area_mm2": 8.9235,
+     "design_break_width_mm": 0.549,
+     "letter": "G",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "G2_9"
+    }
+   }
+  },
+  "3.0": {
+   "slice_z": 2.9,
+   "n_design_letters": [
+    4,
+    6
+   ],
+   "letters": {
+    "A1_0": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 1,
+     "islands_kept": 1,
+     "island_area_printed_ratio": [
+      0.952
+     ],
+     "island_area_mm2": [
+      5.8033
+     ],
+     "open_area_ratio": 1.003,
+     "filled_frac": 0.005,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 19.2948,
+     "design_break_width_mm": 0.819,
+     "letter": "A",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "A1_0"
+    },
+    "L1_1": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.993,
+     "filled_frac": 0.008,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.536,
+     "design_area_mm2": 12.2563,
+     "design_break_width_mm": 1.162,
+     "letter": "L",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "L1_1"
+    },
+    "E1_2": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.001,
+     "filled_frac": 0.001,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.536,
+     "design_area_mm2": 21.7738,
+     "design_break_width_mm": 1.085,
+     "letter": "E",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "E1_2"
+    },
+    "X1_3": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.002,
+     "filled_frac": 0.002,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.48,
+     "design_area_mm2": 17.6834,
+     "design_break_width_mm": 1.241,
+     "letter": "X",
+     "line": 1,
+     "verdict": "FINE",
+     "id": "X1_3"
+    },
+    "G2_4": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.995,
+     "filled_frac": 0.017,
+     "bead_width_min": 0.409,
+     "bead_width_max": 0.661,
+     "design_area_mm2": 8.9235,
+     "design_break_width_mm": 0.549,
+     "letter": "G",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "G2_4"
+    },
+    "Y2_5": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.999,
+     "filled_frac": 0.007,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.607,
+     "design_area_mm2": 5.3959,
+     "design_break_width_mm": 0.749,
+     "letter": "Y",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "Y2_5"
+    },
+    "M2_6": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 1.048,
+     "filled_frac": 0.003,
+     "bead_width_min": 0.37,
+     "bead_width_max": 0.45,
+     "design_area_mm2": 11.3062,
+     "design_break_width_mm": 0.482,
+     "letter": "M",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "M2_6"
+    },
+    "B2_7": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 2,
+     "islands_kept": 2,
+     "island_area_printed_ratio": [
+      0.978,
+      0.985
+     ],
+     "island_area_mm2": [
+      3.2245,
+      4.1455
+     ],
+     "open_area_ratio": 1.012,
+     "filled_frac": 0.007,
+     "bead_width_min": 0.364,
+     "bead_width_max": 0.623,
+     "design_area_mm2": 9.8259,
+     "design_break_width_mm": 0.374,
+     "letter": "B",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "B2_7"
+    },
+    "A2_8": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 1,
+     "islands_kept": 1,
+     "island_area_printed_ratio": [
+      0.927
+     ],
+     "island_area_mm2": [
+      2.2669
+     ],
+     "open_area_ratio": 1.011,
+     "filled_frac": 0.008,
+     "bead_width_min": 0.421,
+     "bead_width_max": 0.617,
+     "design_area_mm2": 7.537,
+     "design_break_width_mm": 0.511,
+     "letter": "A",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "A2_8"
+    },
+    "G2_9": {
+     "slot_open": true,
+     "open_pieces": 1,
+     "design_pieces": 1,
+     "islands_design": 0,
+     "islands_kept": 0,
+     "island_area_printed_ratio": [],
+     "island_area_mm2": [],
+     "open_area_ratio": 0.992,
+     "filled_frac": 0.019,
+     "bead_width_min": 0.409,
+     "bead_width_max": 0.661,
+     "design_area_mm2": 8.9235,
+     "design_break_width_mm": 0.549,
+     "letter": "G",
+     "line": 2,
+     "verdict": "FINE",
+     "id": "G2_9"
+    }
+   }
+  }
+ },
+ "headline_layer": 2.8,
+ "summary": {
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.993,
+   1.048
+  ],
+  "line1_area_ratio_range": [
+   0.993,
+   1.003
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FINE B2_7:FINE A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "closed": [],
+  "counters_closed": [],
+  "island_area_printed_ratio": {
+   "B2_7": [
+    0.977,
+    0.985
+   ],
+   "A2_8": [
+    0.927
+   ],
+   "A1_0": [
+    0.952
+   ]
+  },
+  "line2_filled_frac_max": 0.019,
+  "line2_design_break_width_mm": {
+   "G2_4": 0.549,
+   "Y2_5": 0.749,
+   "M2_6": 0.482,
+   "B2_7": 0.374,
+   "A2_8": 0.511,
+   "G2_9": 0.549
+  },
+  "line2_bead_width_range": [
+   0.353,
+   0.661
+  ],
+  "verdict": "FINE",
+  "line2_all_pieces_and_counters_kept": true
+ },
+ "worst_over_letter_layers": "FINE"
+}

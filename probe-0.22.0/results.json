@@ -1,0 +1,666 @@
+[
+ {
+  "case": "raised-h2",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   1.444,
+   1.558
+  ],
+  "line1_area_ratio_range": [
+   0.995,
+   1.004
+  ],
+  "line2_letter_verdicts": "G2_4:FAT Y2_5:FAT M2_6:FAT B2_7:FAT A2_8:FAT G2_9:FAT",
+  "vanished": [],
+  "counters_closed": [],
+  "counter_open_ratio": {
+   "B2_7": [
+    0.605,
+    0.66
+   ],
+   "A2_8": [
+    0.501
+   ],
+   "A1_0": [
+    0.992
+   ]
+  },
+  "line2_merged_pieces": 0,
+  "closed": [],
+  "line2_design_break_width_mm": {
+   "G2_4": 0.215,
+   "Y2_5": 0.294,
+   "M2_6": 0.192,
+   "B2_7": 0.151,
+   "A2_8": 0.204,
+   "G2_9": 0.215
+  },
+  "line2_bead_width_range": [
+   0.383,
+   0.459
+  ],
+  "verdict": "FAT",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FAT",
+  "letter_layers": [
+   3.2,
+   3.4,
+   3.6,
+   3.8,
+   4.0
+  ]
+ },
+ {
+  "case": "raised-h3",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   1.03,
+   1.098
+  ],
+  "line1_area_ratio_range": [
+   0.995,
+   1.004
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FINE B2_7:FINE A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "counters_closed": [],
+  "counter_open_ratio": {
+   "B2_7": [
+    0.875,
+    0.896
+   ],
+   "A2_8": [
+    0.906
+   ],
+   "A1_0": [
+    0.992
+   ]
+  },
+  "line2_merged_pieces": 0,
+  "closed": [],
+  "line2_design_break_width_mm": {
+   "G2_4": 0.327,
+   "Y2_5": 0.447,
+   "M2_6": 0.289,
+   "B2_7": 0.224,
+   "A2_8": 0.306,
+   "G2_9": 0.327
+  },
+  "line2_bead_width_range": [
+   0.383,
+   0.646
+  ],
+  "verdict": "FINE",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FINE",
+  "letter_layers": [
+   3.2,
+   3.4,
+   3.6,
+   3.8,
+   4.0
+  ]
+ },
+ {
+  "case": "raised-h4",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.991,
+   1.034
+  ],
+  "line1_area_ratio_range": [
+   0.995,
+   1.004
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FINE B2_7:FINE A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "counters_closed": [],
+  "counter_open_ratio": {
+   "B2_7": [
+    0.939,
+    0.949
+   ],
+   "A2_8": [
+    0.976
+   ],
+   "A1_0": [
+    0.992
+   ]
+  },
+  "line2_merged_pieces": 0,
+  "closed": [],
+  "line2_design_break_width_mm": {
+   "G2_4": 0.441,
+   "Y2_5": 0.596,
+   "M2_6": 0.564,
+   "B2_7": 0.297,
+   "A2_8": 0.409,
+   "G2_9": 0.441
+  },
+  "line2_bead_width_range": [
+   0.412,
+   0.824
+  ],
+  "verdict": "FINE",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FINE",
+  "letter_layers": [
+   3.2,
+   3.4,
+   3.6,
+   3.8,
+   4.0
+  ]
+ },
+ {
+  "case": "raised-h5",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.99,
+   1.013
+  ],
+  "line1_area_ratio_range": [
+   0.995,
+   1.004
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FINE B2_7:FINE A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "counters_closed": [],
+  "counter_open_ratio": {
+   "B2_7": [
+    0.977,
+    0.979
+   ],
+   "A2_8": [
+    0.981
+   ],
+   "A1_0": [
+    0.992
+   ]
+  },
+  "line2_merged_pieces": 0,
+  "closed": [],
+  "line2_design_break_width_mm": {
+   "G2_4": 0.549,
+   "Y2_5": 0.749,
+   "M2_6": 0.482,
+   "B2_7": 0.374,
+   "A2_8": 0.511,
+   "G2_9": 0.549
+  },
+  "line2_bead_width_range": [
+   0.359,
+   0.798
+  ],
+  "verdict": "FINE",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FINE",
+  "letter_layers": [
+   3.2,
+   3.4,
+   3.6,
+   3.8,
+   4.0
+  ]
+ },
+ {
+  "case": "engraved-h2",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.985,
+   1.33
+  ],
+  "line1_area_ratio_range": [
+   0.993,
+   1.003
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FAT B2_7:FAT A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "closed": [],
+  "counters_closed": [
+   "B2_7(island lost 1 of 2)"
+  ],
+  "island_area_printed_ratio": {
+   "B2_7": [
+    0.0,
+    0.947
+   ],
+   "A2_8": [
+    0.734
+   ],
+   "A1_0": [
+    0.952
+   ]
+  },
+  "line2_filled_frac_max": 0.076,
+  "line2_design_break_width_mm": {
+   "G2_4": 0.215,
+   "Y2_5": 0.294,
+   "M2_6": 0.192,
+   "B2_7": 0.151,
+   "A2_8": 0.204,
+   "G2_9": 0.215
+  },
+  "line2_bead_width_range": [
+   0.364,
+   0.591
+  ],
+  "verdict": "FAT",
+  "line2_all_pieces_and_counters_kept": false,
+  "worst_over_letter_layers": "FAT",
+  "letter_layers": [
+   2.6,
+   2.8,
+   3.0
+  ]
+ },
+ {
+  "case": "engraved-h3",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.976,
+   1.123
+  ],
+  "line1_area_ratio_range": [
+   0.993,
+   1.003
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FINE B2_7:FINE A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "closed": [],
+  "counters_closed": [],
+  "island_area_printed_ratio": {
+   "B2_7": [
+    0.951,
+    0.95
+   ],
+   "A2_8": [
+    0.871
+   ],
+   "A1_0": [
+    0.952
+   ]
+  },
+  "line2_filled_frac_max": 0.051,
+  "line2_design_break_width_mm": {
+   "G2_4": 0.327,
+   "Y2_5": 0.447,
+   "M2_6": 0.289,
+   "B2_7": 0.224,
+   "A2_8": 0.306,
+   "G2_9": 0.327
+  },
+  "line2_bead_width_range": [
+   0.355,
+   0.72
+  ],
+  "verdict": "FINE",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FINE",
+  "letter_layers": [
+   2.6,
+   2.8,
+   3.0
+  ]
+ },
+ {
+  "case": "engraved-h4",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.99,
+   1.07
+  ],
+  "line1_area_ratio_range": [
+   0.993,
+   1.003
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FINE B2_7:FINE A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "closed": [],
+  "counters_closed": [],
+  "island_area_printed_ratio": {
+   "B2_7": [
+    0.963,
+    0.936
+   ],
+   "A2_8": [
+    0.875
+   ],
+   "A1_0": [
+    0.952
+   ]
+  },
+  "line2_filled_frac_max": 0.024,
+  "line2_design_break_width_mm": {
+   "G2_4": 0.441,
+   "Y2_5": 0.596,
+   "M2_6": 0.564,
+   "B2_7": 0.297,
+   "A2_8": 0.409,
+   "G2_9": 0.441
+  },
+  "line2_bead_width_range": [
+   0.364,
+   0.7
+  ],
+  "verdict": "FINE",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FINE",
+  "letter_layers": [
+   2.6,
+   2.8,
+   3.0
+  ]
+ },
+ {
+  "case": "engraved-h5",
+  "diagnostic": false,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.993,
+   1.048
+  ],
+  "line1_area_ratio_range": [
+   0.993,
+   1.003
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FINE B2_7:FINE A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "closed": [],
+  "counters_closed": [],
+  "island_area_printed_ratio": {
+   "B2_7": [
+    0.977,
+    0.985
+   ],
+   "A2_8": [
+    0.927
+   ],
+   "A1_0": [
+    0.952
+   ]
+  },
+  "line2_filled_frac_max": 0.019,
+  "line2_design_break_width_mm": {
+   "G2_4": 0.549,
+   "Y2_5": 0.749,
+   "M2_6": 0.482,
+   "B2_7": 0.374,
+   "A2_8": 0.511,
+   "G2_9": 0.549
+  },
+  "line2_bead_width_range": [
+   0.353,
+   0.661
+  ],
+  "verdict": "FINE",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FINE",
+  "letter_layers": [
+   2.6,
+   2.8,
+   3.0
+  ]
+ },
+ {
+  "case": "raised-h1",
+  "diagnostic": true,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.0,
+   1.776
+  ],
+  "line1_area_ratio_range": [
+   0.995,
+   1.004
+  ],
+  "line2_letter_verdicts": "G2_4:VANISH Y2_5:VANISH M2_6:VANISH B2_7:VANISH A2_8:VANISH G2_9:VANISH",
+  "vanished": [
+   "G2_4",
+   "Y2_5",
+   "M2_6",
+   "B2_7",
+   "A2_8",
+   "G2_9"
+  ],
+  "counters_closed": [],
+  "counter_open_ratio": {
+   "B2_7": [
+    0.352,
+    0.587
+   ],
+   "A2_8": [
+    1.0
+   ],
+   "A1_0": [
+    0.992
+   ]
+  },
+  "line2_merged_pieces": 0,
+  "closed": [],
+  "line2_design_break_width_mm": {
+   "G2_4": 0.11,
+   "Y2_5": 0.142,
+   "M2_6": 0.095,
+   "B2_7": 0.075,
+   "A2_8": 0.101,
+   "G2_9": 0.11
+  },
+  "line2_bead_width_range": [
+   0.383,
+   0.383
+  ],
+  "verdict": "VANISH",
+  "line2_all_pieces_and_counters_kept": false,
+  "worst_over_letter_layers": "VANISH",
+  "letter_layers": [
+   3.2,
+   3.4,
+   3.6,
+   3.8,
+   4.0
+  ]
+ },
+ {
+  "case": "raised-h1.5",
+  "diagnostic": true,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   1.78,
+   2.091
+  ],
+  "line1_area_ratio_range": [
+   0.995,
+   1.004
+  ],
+  "line2_letter_verdicts": "G2_4:FAT Y2_5:FAT M2_6:FAT B2_7:FAT A2_8:FAT G2_9:FAT",
+  "vanished": [],
+  "counters_closed": [],
+  "counter_open_ratio": {
+   "B2_7": [
+    0.329,
+    0.45
+   ],
+   "A2_8": [
+    0.202
+   ],
+   "A1_0": [
+    0.992
+   ]
+  },
+  "line2_merged_pieces": 0,
+  "closed": [],
+  "line2_design_break_width_mm": {
+   "G2_4": 0.163,
+   "Y2_5": 0.218,
+   "M2_6": 0.145,
+   "B2_7": 0.113,
+   "A2_8": 0.154,
+   "G2_9": 0.163
+  },
+  "line2_bead_width_range": [
+   0.383,
+   0.383
+  ],
+  "verdict": "FAT",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "FAT",
+  "letter_layers": [
+   3.2,
+   3.4,
+   3.6,
+   3.8,
+   4.0
+  ]
+ },
+ {
+  "case": "engraved-h1",
+  "diagnostic": true,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.475,
+   1.766
+  ],
+  "line1_area_ratio_range": [
+   0.993,
+   1.003
+  ],
+  "line2_letter_verdicts": "G2_4:CLOSE Y2_5:FAT M2_6:FAT B2_7:CLOSE A2_8:CLOSE G2_9:CLOSE",
+  "vanished": [],
+  "closed": [
+   "G2_4",
+   "B2_7",
+   "A2_8",
+   "G2_9"
+  ],
+  "counters_closed": [],
+  "island_area_printed_ratio": {
+   "B2_7": [
+    0.876,
+    0.954
+   ],
+   "A2_8": [
+    0.919
+   ],
+   "A1_0": [
+    0.952
+   ]
+  },
+  "line2_filled_frac_max": 0.58,
+  "line2_design_break_width_mm": {
+   "G2_4": 0.11,
+   "Y2_5": 0.142,
+   "M2_6": 0.095,
+   "B2_7": 0.075,
+   "A2_8": 0.101,
+   "G2_9": 0.11
+  },
+  "line2_bead_width_range": [
+   0.378,
+   0.645
+  ],
+  "verdict": "CLOSE",
+  "line2_all_pieces_and_counters_kept": true,
+  "worst_over_letter_layers": "CLOSE",
+  "letter_layers": [
+   2.6,
+   2.8,
+   3.0
+  ]
+ },
+ {
+  "case": "engraved-h1.5",
+  "diagnostic": true,
+  "n_letters_found": [
+   4,
+   6
+  ],
+  "line2_area_ratio_range": [
+   0.974,
+   1.68
+  ],
+  "line1_area_ratio_range": [
+   0.993,
+   1.003
+  ],
+  "line2_letter_verdicts": "G2_4:FINE Y2_5:FINE M2_6:FAT B2_7:FAT A2_8:FINE G2_9:FINE",
+  "vanished": [],
+  "closed": [],
+  "counters_closed": [
+   "B2_7(island lost 2 of 2)"
+  ],
+  "island_area_printed_ratio": {
+   "B2_7": [
+    0.0,
+    0.0
+   ],
+   "A2_8": [
+    0.71
+   ],
+   "A1_0": [
+    0.952
+   ]
+  },
+  "line2_filled_frac_max": 0.139,
+  "line2_design_break_width_mm": {
+   "G2_4": 0.163,
+   "Y2_5": 0.218,
+   "M2_6": 0.145,
+   "B2_7": 0.113,
+   "A2_8": 0.154,
+   "G2_9": 0.163
+  },
+  "line2_bead_width_range": [
+   0.374,
+   0.626
+  ],
+  "verdict": "FAT",
+  "line2_all_pieces_and_counters_kept": false,
+  "worst_over_letter_layers": "FAT",
+  "letter_layers": [
+   2.6,
+   2.8,
+   3.0
+  ]
+ }
+]
