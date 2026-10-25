@@ -64,7 +64,7 @@ def draw_geom(ax, g, fc=None, ec=INK, lw=1.5, alpha=1.0, z=1):
             ax.plot(x, y, color=ec, lw=lw, zorder=z + 1)
 
 
-def panel(f, rect, case, z, window, show_design=True, show_plan=True, mode='raised'):
+def panel(f, rect, case, z, window, show_design=True, show_plan=True, mode='raised', bar=False, islands=False, outline_only=False):
     ax = f.add_axes(rect)
     ax.set_facecolor('white')
     sec, P = layer(case, z)
@@ -79,7 +79,22 @@ def panel(f, rect, case, z, window, show_design=True, show_plan=True, mode='rais
         if show_plan:
             draw_geom(ax, P.intersection(win), fc=ORANGE, ec=ORANGE, lw=0.5, alpha=0.9)
         if show_design:
-            draw_geom(ax, sec.intersection(win), fc=None if show_plan else INK, ec=INK, lw=2.5, z=3)
+            draw_geom(ax, sec.intersection(win), fc=None if (show_plan or outline_only) else INK, ec=INK, lw=2.5, z=3)
+    if islands and mode == 'engraved':
+        slots = [q for q in G.parts(box(-25, -10, 25, 10).difference(sec)) if q.intersects(win) and q.area < 20]
+        isl = sorted([h for q in slots for h in G.holes(q) if h.intersects(win) and h.within(win.buffer(0.01))],
+                     key=lambda h: -h.centroid.y)
+        for k, h in enumerate(isl[:2]):
+            x, y = h.exterior.xy
+            got = h.intersection(P).area / h.area
+            ax.plot(x, y, color=RED if got < 0.5 else GREEN, lw=4, ls='--', zorder=6)
+            ax.text(h.centroid.x, h.centroid.y, 'skipped' if got < 0.5 else 'printed', color=RED if got < 0.5 else GREEN,
+                    fontsize=22, fontweight='bold', ha='center', va='center', zorder=7,
+                    bbox=dict(fc='white', ec='none', alpha=0.8, pad=1))
+    if bar:
+        x0, y0 = window[0] + 0.08, window[1] + 0.08
+        ax.add_patch(Rectangle((x0, y0), 0.4, 0.06, fc=RED, ec='none', zorder=8))
+        ax.text(x0 + 0.45, y0 + 0.03, '0.4 mm tip', color=RED, fontsize=20, fontweight='bold', va='center', zorder=8)
     ax.set_xlim(window[0], window[2])
     ax.set_ylim(window[1], window[3])
     ax.set_aspect('equal')
@@ -98,9 +113,8 @@ def letter_window(case, z, k=3, pad=0.35):
     pieces = G.parts(sec if case.startswith('raised') else tag.difference(sec), 1e-3)
     row2 = sorted([p for p in pieces if p.centroid.y < -0.5 and p.area < 20], key=lambda p: p.centroid.x)
     x0, y0, x1, y1 = row2[k].bounds
-    w = max(x1 - x0, (y1 - y0) * 0.8)
-    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
-    return (cx - w / 2 - pad, y0 - pad, cx + w / 2 + pad, y1 + pad)
+    nxt = row2[k + 1].bounds[0] if k + 1 < len(row2) else x1 + pad
+    return (x0 - pad, y0 - pad - 0.25, min(x1 + pad, (x1 + nxt) / 2), y1 + pad)   # stop before the next letter; room for the bar
 
 
 B2 = None
@@ -114,14 +128,14 @@ def hook(w, h, name, vertical=False):
     f = fig(w, h)
     lo, hi = r2('raised-h2')
     if vertical:
-        text(f, w / 2, 70, 'Small letters,', 76)
-        text(f, w / 2, 170, 'planned fat', 84, RED)
+        text(f, w / 2, 60, 'Small letters,', 76)
+        text(f, w / 2, 160, 'planned fat', 84, RED)
         bw = letter_window('raised-h2', 3.6)
-        panel(f, [0.2, 0.5, 0.6, 0.3], 'raised-h2', 3.6, bw, show_plan=False)
-        text(f, w / 2, 980, 'the B, as designed', 50, INK)
-        panel(f, [0.2, 0.15, 0.6, 0.3], 'raised-h2', 3.6, bw)
-        text(f, w / 2, 1520, f"the slicer's plan: +{(lo - 1) * 100:.0f} to +{(hi - 1) * 100:.0f}%", 50, RED)
-        text(f, w / 2, 1620, '2 mm letters · slicer plan, not a print', 38, GREY)
+        panel(f, [0.25, 0.555, 0.5, 0.27], 'raised-h2', 3.6, bw, show_plan=False)    # y 345..864 px
+        text(f, w / 2, 885, 'the B, as designed', 50, INK)
+        panel(f, [0.25, 0.235, 0.5, 0.27], 'raised-h2', 3.6, bw)                     # y 955..1469 px
+        text(f, w / 2, 1500, f"the slicer's plan: +{(lo - 1) * 100:.0f} to +{(hi - 1) * 100:.0f}%", 50, RED)
+        text(f, w / 2, 1600, '2 mm letters · slicer plan, not a print', 38, GREY)
     else:
         text(f, w / 2, 40, f"2 mm letters: planned {(lo - 1) * 100:.0f}-{(hi - 1) * 100:.0f}% fatter", 64, RED)
         bw = letter_window('raised-h2', 3.6)
@@ -150,7 +164,7 @@ def strokes():
     lay = a['layers']['3.6']['letters']
     l2 = [r for r in lay.values() if r['line'] == 2]
     text(f, W / 2, 40, "Thinnest stroke, 2 mm letters", 60)
-    text(f, W / 2, 130, 'our measuring program, from the saved design', 40, GREY)
+    text(f, W / 2, 130, 'our measuring program, our 2 mm tag', 40, GREY)
     ax = f.add_axes([0.12, 0.15, 0.8, 0.65])
     ax.set_facecolor(BG)
     names = [r['letter'] for r in l2]
@@ -235,15 +249,15 @@ def prompt():
 
 def both():
     f = fig()
-    text(f, W / 2, 40, '2 mm vs 3 mm, both ways', 62)
-    panel(f, [0.03, 0.47, 0.46, 0.3], 'raised-h2', 3.6, ROW2[2])
-    panel(f, [0.51, 0.47, 0.46, 0.3], 'engraved-h2', 2.8, ROW2[2], mode='engraved')
-    panel(f, [0.03, 0.1, 0.46, 0.3], 'raised-h3', 3.6, ROW2[3])
-    panel(f, [0.51, 0.1, 0.46, 0.3], 'engraved-h3', 2.8, ROW2[3], mode='engraved')
-    text(f, W * 0.26, 130, 'raised', 50, INK)
-    text(f, W * 0.74, 130, 'engraved', 50, INK)
-    text(f, W / 2, 560, '2 mm: fat / B speck skipped', 42, RED)
-    text(f, W / 2, 1100, '3 mm: clean, both ways', 46, GREEN)
+    text(f, W / 2, 30, '2 mm vs 3 mm, both ways', 62)
+    text(f, W * 0.3, 120, 'raised (GYM BAG)', 44, INK)
+    text(f, W * 0.8, 120, 'engraved (the B)', 44, INK)
+    panel(f, [0.03, 0.47, 0.55, 0.3], 'raised-h2', 3.6, ROW2[2])
+    panel(f, [0.03, 0.1, 0.55, 0.3], 'raised-h3', 3.6, ROW2[3])
+    panel(f, [0.64, 0.45, 0.32, 0.34], 'engraved-h2', 2.8, letter_window('engraved-h2', 2.8), mode='engraved', islands=True)
+    panel(f, [0.64, 0.06, 0.32, 0.34], 'engraved-h3', 2.8, letter_window('engraved-h3', 2.8), mode='engraved', islands=True)
+    text(f, W * 0.3, 1010 - 450, '2 mm: fat', 44, RED)
+    text(f, W * 0.3, 1140, '3 mm: clean', 44, GREEN)
     save(f, 'card-both.png')
 
 
@@ -261,12 +275,13 @@ def runs():
 
 def replies():
     f = fig()
-    text(f, W / 2, 40, 'None of them checked the plan', 60, RED)
+    text(f, W / 2, 40, 'None of them measured', 64, RED)
     q = ['run 1: "from font proportions,', '  not measured on the model"', 'run 2: "I estimated that from the',
          '  font and didn\'t measure it"', 'run 3: "probably too thin"']
     for i, l in enumerate(q):
         text(f, 120, 200 + i * 110, l, 50, INK, ha='left')
-    text(f, W / 2, 820, "the slicer's plan: within 2%", 56, GREEN)
+    text(f, W / 2, 800, "the slicer's plan: within 2%", 54, GREEN)
+    text(f, W / 2, 900, 'guessed 5.5 mm · enough here: 3 mm', 48, INK)
     text(f, W / 2, 1110, 'quotes from each run\'s own reply', 38, GREY)
     save(f, 'card-replies.png')
 
@@ -286,28 +301,51 @@ def named():
 
 def why():
     f = fig()
-    a2 = json.load(open(os.path.join(LAB, 'out', 'raised-h2', 'analysis.json')))['summary']['line2_design_break_width_mm']
-    a3 = json.load(open(os.path.join(LAB, 'out', 'raised-h3', 'analysis.json')))['summary']['line2_design_break_width_mm']
     text(f, W / 2, 40, 'Step 2: taller letters, wider strokes', 58)
-    text(f, W / 2, 250, f"2 mm: {min(a2.values()):.2f}-{max(a2.values()):.2f} mm", 72, RED)
-    text(f, W / 2, 420, f"3 mm: {min(a3.values()):.2f}-{max(a3.values()):.2f} mm", 72, GREEN)
-    lo, hi = r2('raised-h3')
-    text(f, W / 2, 650, f"planned {(lo - 1) * 100:.0f} to {(hi - 1) * 100:.0f}% fatter at 3 mm", 56, INK)
-    text(f, W / 2, 760, 'under our 15% bar', 56, GREEN)
-    text(f, W / 2, 1110, "thinnest stroke per letter, our measuring program", 36, GREY)
+    w2 = letter_window('raised-h2', 3.6)
+    w3 = letter_window('raised-h3', 3.6)
+    span = max(w3[2] - w3[0], w3[3] - w3[1])
+    for k, (case, w) in enumerate((('raised-h2', w2), ('raised-h3', w3))):   # the same scale: both windows span the 3 mm B
+        cx, cy = (w[0] + w[2]) / 2, (w[1] + w[3]) / 2
+        win = (cx - span / 2, cy - span / 2, cx + span / 2, cy + span / 2)
+        panel(f, [0.06 + k * 0.48, 0.2, 0.42, 0.57], case, 3.6, win, bar=True)
+    lo2, hi2 = r2('raised-h2')
+    lo3, hi3 = r2('raised-h3')
+    text(f, W * 0.27, 160, '2 mm', 56, INK)
+    text(f, W * 0.75, 160, '3 mm', 56, INK)
+    text(f, W * 0.27, 980, f'+{(lo2 - 1) * 100:.0f} to +{(hi2 - 1) * 100:.0f}%', 56, RED)
+    text(f, W * 0.75, 980, f'+{(lo3 - 1) * 100:.0f} to +{(hi3 - 1) * 100:.0f}%', 56, GREEN)
+    text(f, W / 2, 1110, 'the B, same scale · planned vs drawn, GYM BAG row', 36, GREY)
     save(f, 'card-why.png')
 
 
 hook(1920, 1080, 'hook-landscape.png')
 hook(1080, 1920, 'hook-vertical.png', vertical=True)
 card_simple('card-hook.png', '2 mm letters, planned fat', None, 'raised-h2', 3.6, ROW2[2], footer='black = designed · orange = planned · slicer plan')
-card_simple('card-stroke.png', 'A stroke: one bar or curve', 'the B, 2 mm tall, as designed', 'raised-h2', 3.6, letter_window('raised-h2', 3.6), plan=False)
+def stroke_card():
+    f = fig()
+    text(f, W / 2, 40, 'A stroke: one bar or curve', 64)
+    text(f, W / 2, 130, 'the B, 2 mm tall, as designed (outline)', 46, GREY)
+    panel(f, [0.25, 0.15, 0.5, 0.67], 'raised-h2', 3.6, letter_window('raised-h2', 3.6), show_plan=False, outline_only=True, bar=True)
+    text(f, W / 2, 1110, 'its strokes: thinner than the red 0.4 mm bar', 42, RED)
+    save(f, 'card-stroke.png')
+
+
+stroke_card()
 card_simple('card-fixed.png', '3 mm: every letter clean', None, 'raised-h3', 3.6, ROW2[3], footer="the slicer's plan, 3 mm tall")
 card_simple('card-tracing.png', 'The slicer traces every line', None, 'raised-h3', 3.6, ROW2[3], footer='each orange line at its own width')
 card_simple('card-blob.png', 'Thinner than the line: a blob', 'the B, 2 mm: design (black) vs plan', 'raised-h2', 3.6, letter_window('raised-h2', 3.6))
 card_simple('card-counters.png', 'Counters: the holes in a B', 'squeezed by fat strokes', 'raised-h2', 3.6, letter_window('raised-h2', 3.6), footer='2 mm tall · slicer plan')
-card_simple('card-engraved.png', 'Engraved: a speck skipped', 'the B pressed in, 2 mm: blue = slot', 'engraved-h2', 2.8, letter_window('engraved-h2', 2.8), mode='engraved',
-            footer='no plastic planned in the upper island')
+def engraved_card():
+    f = fig()
+    text(f, W / 2, 40, 'Engraved: the island skipped', 62)
+    text(f, W / 2, 130, 'the B pressed in, 2 mm · orange = planned plastic', 42, GREY)
+    panel(f, [0.25, 0.15, 0.5, 0.67], 'engraved-h2', 2.8, letter_window('engraved-h2', 2.8), mode='engraved', islands=True)
+    text(f, W / 2, 1110, 'blue = groove · slicer plan, not a print', 40, GREY)
+    save(f, 'card-engraved.png')
+
+
+engraved_card()
 card_simple('card-plan2.png', 'The plan: +44 to +56%', 'GYM BAG, 2 mm, one 0.38 mm line per stroke', 'raised-h2', 3.6, ROW2[2])
 card_simple('card-proof.png', 'Step 3: rebuilt at 3 mm', 'every counter open', 'raised-h3', 3.6, ROW2[3], footer='slicer plan, not a print')
 strokes()
