@@ -54,13 +54,21 @@ def layer(case, z):
 
 
 def draw_geom(ax, g, fc=None, ec=INK, lw=1.5, alpha=1.0, z=1):
+    """Fill each polygon with its holes left open (one compound path per polygon, even-odd), so a hole never paints over
+    another polygon lying inside it (e.g. the plastic island inside an engraved B's groove)."""
+    from matplotlib.path import Path
+    from matplotlib.patches import PathPatch
     for p in G.parts(g):
-        for k, ring in enumerate([p.exterior] + list(p.interiors)):
+        rings = [p.exterior] + list(p.interiors)
+        if fc:
+            verts, codes = [], []
+            for ring in rings:
+                xy = list(ring.coords)
+                verts += xy
+                codes += [Path.MOVETO] + [Path.LINETO] * (len(xy) - 2) + [Path.CLOSEPOLY]
+            ax.add_patch(PathPatch(Path(verts, codes), fc=fc, ec='none', alpha=alpha, zorder=z))
+        for ring in rings:
             x, y = ring.xy
-            if fc and k == 0:
-                ax.fill(x, y, color=fc, alpha=alpha, lw=0, zorder=z)
-            elif fc:
-                ax.fill(x, y, color=BG, lw=0, zorder=z)
             ax.plot(x, y, color=ec, lw=lw, zorder=z + 1)
 
 
@@ -93,8 +101,9 @@ def panel(f, rect, case, z, window, show_design=True, show_plan=True, mode='rais
                     bbox=dict(fc='white', ec='none', alpha=0.8, pad=1))
     if bar:
         x0, y0 = window[0] + 0.08, window[1] + 0.08
-        ax.add_patch(Rectangle((x0, y0), 0.4, 0.06, fc=RED, ec='none', zorder=8))
-        ax.text(x0 + 0.45, y0 + 0.03, '0.4 mm tip', color=RED, fontsize=20, fontweight='bold', va='center', zorder=8)
+        from matplotlib.patches import Circle
+        ax.add_patch(Circle((x0 + 0.2, y0 + 0.2), 0.2, fc=RED, ec='none', zorder=8))
+        ax.text(x0 + 0.48, y0 + 0.2, '0.4 mm tip', color=RED, fontsize=22, fontweight='bold', va='center', zorder=8)
     ax.set_xlim(window[0], window[2])
     ax.set_ylim(window[1], window[3])
     ax.set_aspect('equal')
@@ -114,7 +123,7 @@ def letter_window(case, z, k=3, pad=0.35):
     row2 = sorted([p for p in pieces if p.centroid.y < -0.5 and p.area < 20], key=lambda p: p.centroid.x)
     x0, y0, x1, y1 = row2[k].bounds
     nxt = row2[k + 1].bounds[0] if k + 1 < len(row2) else x1 + pad
-    return (x0 - pad, y0 - pad - 0.25, min(x1 + pad, (x1 + nxt) / 2), y1 + pad)   # stop before the next letter; room for the bar
+    return (x0 - pad, y0 - pad - 0.5, min(x1 + pad, (x1 + nxt) / 2), y1 + pad)   # stop before the next letter; room for the bar
 
 
 B2 = None
@@ -315,7 +324,7 @@ def why():
     text(f, W * 0.75, 160, '3 mm', 56, INK)
     text(f, W * 0.27, 980, f'+{(lo2 - 1) * 100:.0f} to +{(hi2 - 1) * 100:.0f}%', 56, RED)
     text(f, W * 0.75, 980, f'+{(lo3 - 1) * 100:.0f} to +{(hi3 - 1) * 100:.0f}%', 56, GREEN)
-    text(f, W / 2, 1110, 'the B, same scale · planned vs drawn, GYM BAG row', 36, GREY)
+    text(f, W / 2, 1110, 'the B, same scale · red dot = 0.4 mm tip', 40, GREY)
     save(f, 'card-why.png')
 
 
@@ -327,7 +336,7 @@ def stroke_card():
     text(f, W / 2, 40, 'A stroke: one bar or curve', 64)
     text(f, W / 2, 130, 'the B, 2 mm tall, as designed (outline)', 46, GREY)
     panel(f, [0.25, 0.15, 0.5, 0.67], 'raised-h2', 3.6, letter_window('raised-h2', 3.6), show_plan=False, outline_only=True, bar=True)
-    text(f, W / 2, 1110, 'its strokes: thinner than the red 0.4 mm bar', 42, RED)
+    text(f, W / 2, 1110, 'its strokes: thinner than the red 0.4 mm dot', 42, RED)
     save(f, 'card-stroke.png')
 
 
