@@ -1,0 +1,34 @@
+[
+ {
+  "png": "raised-h2-top.png",
+  "isError": false
+ },
+ {
+  "png": "raised-h2-tilt.png",
+  "isError": false
+ },
+ {
+  "png": "raised-h3-top.png",
+  "isError": false
+ },
+ {
+  "png": "raised-h3-tilt.png",
+  "isError": false
+ },
+ {
+  "png": "engraved-h2-top.png",
+  "isError": false
+ },
+ {
+  "png": "engraved-h2-tilt.png",
+  "isError": false
+ },
+ {
+  "png": "engraved-h3-top.png",
+  "isError": false
+ },
+ {
+  "png": "engraved-h3-tilt.png",
+  "isError": false
+ }
+]
