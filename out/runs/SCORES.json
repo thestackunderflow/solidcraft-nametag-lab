@@ -1,0 +1,311 @@
+[
+ {
+  "pass": true,
+  "why": [
+   "pass"
+  ],
+  "mode": "raised",
+  "row_cap_mm": [
+   8.5,
+   5.5
+  ],
+  "row2_ratio_range": [
+   0.994,
+   1.016
+  ],
+  "worst_verdict": "FINE",
+  "ring_hole_open": true,
+  "bodies": [],
+  "cost_usd": 0.1312989,
+  "text_z": [
+   1.95,
+   3.0
+  ],
+  "tag_z": [
+   0.0,
+   1.95
+  ],
+  "run": "run-1",
+  "final_reply": "I built the keychain tag and saved it to `/lab/work/tag.solidcraft`. I looked at a top-view render of the model, and both rows of text sit inside the plate.\n\n- **Plate:** 50 × 20 mm and 2 mm thick, with a 4 mm key-ring hole on the left, centred 5.5 mm in from the edge.\n- **Text:** raised 1 mm, so the whole tag is 3 mm tall. The model is one solid.\n- **Row 1:** \"ALEX\", 8.5 mm cap height.\n- **Row 2:** \"GYM BAG\", 5.5 mm cap height.\n\nI sized the text for a 0.4 mm nozzle, but the strokes are thinner than I wanted. The built-in font has no bold face, and the sandbox wouldn't let me load a bold font file. So I made the letters larger instead. I estimate the \"ALEX\" strokes at about 1 mm and the \"GYM BAG\" strokes at about 0.7 mm. That's from font proportions, not measured on the model. \"GYM BAG\" is the weaker row. Slicing at 0.2 mm layers with a small line width should keep it clean, but check the preview before printing.\n\nI didn't export an STL or 3MF, since you only asked for the design file. The design was built in a headless session, so the SolidCraft window never showed it.",
+  "text_calls": [
+   {
+    "seq": 16,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      29,
+      9
+     ],
+     "height": 8,
+     "bold": true,
+     "align": "center"
+    }
+   },
+   {
+    "seq": 16,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      29,
+      3
+     ],
+     "height": 4.5,
+     "bold": true,
+     "align": "center",
+     "letter_spacing": 0.3
+    }
+   },
+   {
+    "seq": 18,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      29,
+      9
+     ],
+     "height": 8,
+     "font": "C:\\Windows\\Fonts\\arialbd.ttf",
+     "align": "center"
+    }
+   },
+   {
+    "seq": 18,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      29,
+      3
+     ],
+     "height": 4.5,
+     "font": "C:\\Windows\\Fonts\\arialbd.ttf",
+     "align": "center",
+     "letter_spacing": 0.3
+    }
+   },
+   {
+    "seq": 20,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      29,
+      9.5
+     ],
+     "height": 8.5,
+     "align": "center"
+    }
+   },
+   {
+    "seq": 20,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      29,
+      2
+     ],
+     "height": 5.5,
+     "align": "center"
+    }
+   }
+  ]
+ },
+ {
+  "pass": true,
+  "why": [
+   "pass"
+  ],
+  "mode": "raised",
+  "row_cap_mm": [
+   8.5,
+   5.0
+  ],
+  "row2_ratio_range": [
+   0.99,
+   1.013
+  ],
+  "worst_verdict": "FINE",
+  "ring_hole_open": true,
+  "bodies": [],
+  "cost_usd": 0.11127740000000001,
+  "text_z": [
+   1.95,
+   2.8
+  ],
+  "tag_z": [
+   0.0,
+   1.95
+  ],
+  "run": "run-2",
+  "final_reply": "The keychain tag is built and saved to `/lab/work/tag.solidcraft`. I checked it with a top-view render and a volume measurement, but I haven't tested a print.\n\n- **Plate:** 50 × 20 mm, 2.0 mm thick, with a 4 mm key-ring hole centred 6 mm in from the left end.\n- **Text:** raised 0.8 mm, which is 4 layers at 0.2 mm. Both rows are centred in the space to the right of the hole, in the built-in Liberation Sans.\n  - **ALEX:** 8.5 mm tall capitals.\n  - **GYM BAG:** 5 mm tall capitals, smaller as asked, with about 2 mm between the rows.\n- **Nozzle:** the built-in font has no bold, so I used regular weight. At those sizes the strokes should be roughly 0.7–1.1 mm wide, which is above the 0.4 mm nozzle width. I estimated that from the font and didn't measure it. The thinnest strokes are in GYM BAG, so check that row in your slicer preview.\n- **Size:** the final body is 50 × 20 × 2.8 mm, and the model is a single solid.\n\nThe plate corners are square. The SolidCraft app wasn't running, so this was built in a headless session and you haven't seen it live.",
+  "text_calls": [
+   {
+    "seq": 16,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      30,
+      9.5
+     ],
+     "height": 8,
+     "bold": true,
+     "align": "center"
+    }
+   },
+   {
+    "seq": 16,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      30,
+      3
+     ],
+     "height": 4.5,
+     "bold": true,
+     "align": "center"
+    }
+   },
+   {
+    "seq": 18,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      31,
+      9.5
+     ],
+     "height": 8.5,
+     "align": "center"
+    }
+   },
+   {
+    "seq": 18,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      31,
+      2.5
+     ],
+     "height": 5,
+     "align": "center"
+    }
+   }
+  ]
+ },
+ {
+  "pass": true,
+  "why": [
+   "pass"
+  ],
+  "mode": "raised",
+  "row_cap_mm": [
+   8.0,
+   5.5
+  ],
+  "row2_ratio_range": [
+   0.994,
+   1.016
+  ],
+  "worst_verdict": "FINE",
+  "ring_hole_open": true,
+  "bodies": [],
+  "cost_usd": 0.134366,
+  "text_z": [
+   1.95,
+   2.8
+  ],
+  "tag_z": [
+   0.0,
+   1.95
+  ],
+  "run": "run-3",
+  "final_reply": "I made the tag and saved it to `/lab/work/tag.solidcraft`. I didn't measure the stroke widths directly. The \"GYM BAG\" strokes are probably too thin for a 0.4 mm nozzle to print well.\n\n- **Plate:** 50 × 20 × 2 mm, with a 3.5 mm keyring hole 5 mm in from the left edge, centred vertically.\n- **Text:** raised 0.8 mm on top, which is two layers at 0.4 mm. \"ALEX\" is on the top row with 8 mm capital height. \"GYM BAG\" is a smaller second row with 5.5 mm capitals. Both rows are left-aligned at x = 10 mm, clear of the hole.\n- **Checks:** the model is one solid, with an overall height of 2.8 mm and a volume of about 2088 mm³. A top-view render shows both rows fit on the plate and clear the hole.\n\n**Stroke width:** the app's built-in font has no bold face and no system fonts were available in this headless session, so I used the regular weight. I estimated the stroke widths from the font's proportions.\n\n| Row | Stroke width |\n|---|---|\n| \"ALEX\" | about 1.0 mm (roughly 2.5 nozzle widths) |\n| \"GYM BAG\" | about 0.7 mm |\n\nThe 0.7 mm strokes are thinner than I'd like, and the rows are as large as the plate allows. If the second row prints poorly, use a bold font at that size or make the plate wider",
+  "text_calls": [
+   {
+    "seq": 16,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      11,
+      9.5
+     ],
+     "height": 8,
+     "bold": true
+    }
+   },
+   {
+    "seq": 16,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      11,
+      3
+     ],
+     "height": 4.5,
+     "bold": true
+    }
+   },
+   {
+    "seq": 18,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      11,
+      9.5
+     ],
+     "height": 8,
+     "bold": true,
+     "font": "Arial"
+    }
+   },
+   {
+    "seq": 18,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      11,
+      3
+     ],
+     "height": 4.5,
+     "bold": true,
+     "font": "Arial"
+    }
+   },
+   {
+    "seq": 20,
+    "command": "sketch.text",
+    "params": {
+     "text": "ALEX",
+     "at": [
+      10,
+      9.5
+     ],
+     "height": 8
+    }
+   },
+   {
+    "seq": 20,
+    "command": "sketch.text",
+    "params": {
+     "text": "GYM BAG",
+     "at": [
+      10,
+      2.5
+     ],
+     "height": 5.5
+    }
+   }
+  ]
+ }
+]

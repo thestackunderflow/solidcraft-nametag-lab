@@ -1,0 +1,11 @@
+10 => Processing triangulated mesh
+20 => Generating perimeters
+30 => Preparing infill
+45 => Making infill
+65 => Searching support spots
+69 => Alert if supports needed
+88 => Estimating curled extrusions
+89 => Calculating overhanging perimeters
+88 => Generating skirt and brim
+90 => Exporting G-code to out/runs/run-3/score/tag.gcode
+Slicing result exported to out/runs/run-3/score/tag.gcode

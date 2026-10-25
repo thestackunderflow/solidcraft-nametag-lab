@@ -1,0 +1,1068 @@
+{
+ "rule": "25 Oct 2026, before agent run 1 (plan rev 2.1 section 3; thresholds set after the probe, before any run)",
+ "bodies": [],
+ "mode": "raised",
+ "tag_z": [
+  0.0,
+  1.95
+ ],
+ "text_z": [
+  1.95,
+  3.0
+ ],
+ "ring_hole_mm2": 12.526,
+ "layers": {
+  "2.2": {
+   "slice_z": 2.1,
+   "pieces": [
+    4,
+    6
+   ],
+   "row_cap_mm": [
+    8.5,
+    5.5
+   ],
+   "letters": {
+    "1_0": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.992
+     ],
+     "area_ratio": 1.004,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.048,
+     "bead_width_min": 0.471,
+     "bead_width_max": 0.657,
+     "design_area_mm2": 21.7821,
+     "design_break_width_mm": 0.872,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_1": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.995,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0403,
+     "bead_width_min": 0.492,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 13.8362,
+     "design_break_width_mm": 1.235,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_2": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.992,
+     "uncovered_frac": 0.011,
+     "largest_uncovered_mm2": 0.134,
+     "bead_width_min": 0.486,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 24.5806,
+     "design_break_width_mm": 1.332,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_3": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.991,
+     "uncovered_frac": 0.024,
+     "largest_uncovered_mm2": 0.2145,
+     "bead_width_min": 0.477,
+     "bead_width_max": 0.539,
+     "design_area_mm2": 19.9629,
+     "design_break_width_mm": 1.32,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "2_4": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.996,
+     "uncovered_frac": 0.019,
+     "largest_uncovered_mm2": 0.0263,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_5": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.014,
+     "uncovered_frac": 0.01,
+     "largest_uncovered_mm2": 0.0266,
+     "bead_width_min": 0.362,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 6.5291,
+     "design_break_width_mm": 0.825,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_6": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.011,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.0158,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.658,
+     "design_area_mm2": 13.6808,
+     "design_break_width_mm": 0.529,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_7": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 2,
+     "counters_kept": 2,
+     "counter_open_ratio": [
+      0.966,
+      0.983
+     ],
+     "area_ratio": 1.016,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0118,
+     "bead_width_min": 0.28,
+     "bead_width_max": 0.613,
+     "design_area_mm2": 11.8893,
+     "design_break_width_mm": 0.412,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_8": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.991
+     ],
+     "area_ratio": 1.005,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.022,
+     "bead_width_min": 0.312,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 9.1198,
+     "design_break_width_mm": 0.564,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_9": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.995,
+     "uncovered_frac": 0.019,
+     "largest_uncovered_mm2": 0.0325,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    }
+   }
+  },
+  "2.4": {
+   "slice_z": 2.3,
+   "pieces": [
+    4,
+    6
+   ],
+   "row_cap_mm": [
+    8.5,
+    5.5
+   ],
+   "letters": {
+    "1_0": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.992
+     ],
+     "area_ratio": 1.004,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.048,
+     "bead_width_min": 0.471,
+     "bead_width_max": 0.657,
+     "design_area_mm2": 21.7821,
+     "design_break_width_mm": 0.872,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_1": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.995,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0403,
+     "bead_width_min": 0.492,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 13.8362,
+     "design_break_width_mm": 1.235,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_2": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.992,
+     "uncovered_frac": 0.011,
+     "largest_uncovered_mm2": 0.134,
+     "bead_width_min": 0.486,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 24.5806,
+     "design_break_width_mm": 1.332,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_3": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.991,
+     "uncovered_frac": 0.024,
+     "largest_uncovered_mm2": 0.2145,
+     "bead_width_min": 0.477,
+     "bead_width_max": 0.539,
+     "design_area_mm2": 19.9629,
+     "design_break_width_mm": 1.32,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "2_4": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.996,
+     "uncovered_frac": 0.019,
+     "largest_uncovered_mm2": 0.0263,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_5": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.014,
+     "uncovered_frac": 0.01,
+     "largest_uncovered_mm2": 0.0266,
+     "bead_width_min": 0.362,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 6.5291,
+     "design_break_width_mm": 0.825,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_6": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.01,
+     "uncovered_frac": 0.006,
+     "largest_uncovered_mm2": 0.0158,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.658,
+     "design_area_mm2": 13.6808,
+     "design_break_width_mm": 0.529,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_7": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 2,
+     "counters_kept": 2,
+     "counter_open_ratio": [
+      0.966,
+      0.983
+     ],
+     "area_ratio": 1.016,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0118,
+     "bead_width_min": 0.28,
+     "bead_width_max": 0.613,
+     "design_area_mm2": 11.8893,
+     "design_break_width_mm": 0.412,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_8": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.991
+     ],
+     "area_ratio": 1.005,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.022,
+     "bead_width_min": 0.312,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 9.1198,
+     "design_break_width_mm": 0.564,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_9": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.999,
+     "uncovered_frac": 0.018,
+     "largest_uncovered_mm2": 0.0359,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    }
+   }
+  },
+  "2.6": {
+   "slice_z": 2.5,
+   "pieces": [
+    4,
+    6
+   ],
+   "row_cap_mm": [
+    8.5,
+    5.5
+   ],
+   "letters": {
+    "1_0": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.992
+     ],
+     "area_ratio": 1.004,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.048,
+     "bead_width_min": 0.471,
+     "bead_width_max": 0.657,
+     "design_area_mm2": 21.7821,
+     "design_break_width_mm": 0.872,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_1": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.995,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0403,
+     "bead_width_min": 0.492,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 13.8362,
+     "design_break_width_mm": 1.235,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_2": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.992,
+     "uncovered_frac": 0.011,
+     "largest_uncovered_mm2": 0.134,
+     "bead_width_min": 0.486,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 24.5806,
+     "design_break_width_mm": 1.332,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_3": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.991,
+     "uncovered_frac": 0.024,
+     "largest_uncovered_mm2": 0.2145,
+     "bead_width_min": 0.477,
+     "bead_width_max": 0.539,
+     "design_area_mm2": 19.9629,
+     "design_break_width_mm": 1.32,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "2_4": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.994,
+     "uncovered_frac": 0.021,
+     "largest_uncovered_mm2": 0.0728,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_5": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.014,
+     "uncovered_frac": 0.01,
+     "largest_uncovered_mm2": 0.0266,
+     "bead_width_min": 0.362,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 6.5291,
+     "design_break_width_mm": 0.825,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_6": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.01,
+     "uncovered_frac": 0.006,
+     "largest_uncovered_mm2": 0.0158,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.658,
+     "design_area_mm2": 13.6808,
+     "design_break_width_mm": 0.529,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_7": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 2,
+     "counters_kept": 2,
+     "counter_open_ratio": [
+      0.966,
+      0.983
+     ],
+     "area_ratio": 1.016,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0118,
+     "bead_width_min": 0.28,
+     "bead_width_max": 0.613,
+     "design_area_mm2": 11.8893,
+     "design_break_width_mm": 0.412,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_8": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.991
+     ],
+     "area_ratio": 1.005,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.022,
+     "bead_width_min": 0.312,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 9.1198,
+     "design_break_width_mm": 0.564,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_9": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.994,
+     "uncovered_frac": 0.021,
+     "largest_uncovered_mm2": 0.0732,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    }
+   }
+  },
+  "2.8": {
+   "slice_z": 2.7,
+   "pieces": [
+    4,
+    6
+   ],
+   "row_cap_mm": [
+    8.5,
+    5.5
+   ],
+   "letters": {
+    "1_0": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.992
+     ],
+     "area_ratio": 1.004,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.048,
+     "bead_width_min": 0.471,
+     "bead_width_max": 0.657,
+     "design_area_mm2": 21.7821,
+     "design_break_width_mm": 0.872,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_1": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.995,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0403,
+     "bead_width_min": 0.492,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 13.8362,
+     "design_break_width_mm": 1.235,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_2": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.992,
+     "uncovered_frac": 0.011,
+     "largest_uncovered_mm2": 0.134,
+     "bead_width_min": 0.486,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 24.5806,
+     "design_break_width_mm": 1.332,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_3": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.991,
+     "uncovered_frac": 0.024,
+     "largest_uncovered_mm2": 0.2145,
+     "bead_width_min": 0.477,
+     "bead_width_max": 0.539,
+     "design_area_mm2": 19.9629,
+     "design_break_width_mm": 1.32,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "2_4": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.994,
+     "uncovered_frac": 0.021,
+     "largest_uncovered_mm2": 0.0728,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_5": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.014,
+     "uncovered_frac": 0.01,
+     "largest_uncovered_mm2": 0.0266,
+     "bead_width_min": 0.362,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 6.5291,
+     "design_break_width_mm": 0.825,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_6": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.01,
+     "uncovered_frac": 0.006,
+     "largest_uncovered_mm2": 0.0158,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.658,
+     "design_area_mm2": 13.6808,
+     "design_break_width_mm": 0.529,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_7": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 2,
+     "counters_kept": 2,
+     "counter_open_ratio": [
+      0.966,
+      0.982
+     ],
+     "area_ratio": 1.015,
+     "uncovered_frac": 0.008,
+     "largest_uncovered_mm2": 0.0168,
+     "bead_width_min": 0.28,
+     "bead_width_max": 0.613,
+     "design_area_mm2": 11.8893,
+     "design_break_width_mm": 0.412,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_8": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.991
+     ],
+     "area_ratio": 1.005,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.022,
+     "bead_width_min": 0.312,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 9.1198,
+     "design_break_width_mm": 0.564,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_9": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.995,
+     "uncovered_frac": 0.019,
+     "largest_uncovered_mm2": 0.0325,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    }
+   }
+  },
+  "3.0": {
+   "slice_z": 2.9,
+   "pieces": [
+    4,
+    6
+   ],
+   "row_cap_mm": [
+    8.5,
+    5.5
+   ],
+   "letters": {
+    "1_0": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.992
+     ],
+     "area_ratio": 1.004,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.048,
+     "bead_width_min": 0.471,
+     "bead_width_max": 0.657,
+     "design_area_mm2": 21.7821,
+     "design_break_width_mm": 0.872,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_1": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.995,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0403,
+     "bead_width_min": 0.492,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 13.8362,
+     "design_break_width_mm": 1.235,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_2": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.992,
+     "uncovered_frac": 0.011,
+     "largest_uncovered_mm2": 0.134,
+     "bead_width_min": 0.486,
+     "bead_width_max": 0.639,
+     "design_area_mm2": 24.5806,
+     "design_break_width_mm": 1.332,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "1_3": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.991,
+     "uncovered_frac": 0.024,
+     "largest_uncovered_mm2": 0.2145,
+     "bead_width_min": 0.477,
+     "bead_width_max": 0.539,
+     "design_area_mm2": 19.9629,
+     "design_break_width_mm": 1.32,
+     "line": 1,
+     "verdict": "FINE"
+    },
+    "2_4": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.999,
+     "uncovered_frac": 0.018,
+     "largest_uncovered_mm2": 0.0362,
+     "bead_width_min": 0.323,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_5": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.014,
+     "uncovered_frac": 0.01,
+     "largest_uncovered_mm2": 0.0266,
+     "bead_width_min": 0.362,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 6.5291,
+     "design_break_width_mm": 0.825,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_6": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 1.01,
+     "uncovered_frac": 0.006,
+     "largest_uncovered_mm2": 0.0158,
+     "bead_width_min": 0.353,
+     "bead_width_max": 0.658,
+     "design_area_mm2": 13.6808,
+     "design_break_width_mm": 0.529,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_7": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 2,
+     "counters_kept": 2,
+     "counter_open_ratio": [
+      0.966,
+      0.983
+     ],
+     "area_ratio": 1.016,
+     "uncovered_frac": 0.007,
+     "largest_uncovered_mm2": 0.0118,
+     "bead_width_min": 0.28,
+     "bead_width_max": 0.613,
+     "design_area_mm2": 11.8893,
+     "design_break_width_mm": 0.412,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_8": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 1,
+     "counters_kept": 1,
+     "counter_open_ratio": [
+      0.991
+     ],
+     "area_ratio": 1.005,
+     "uncovered_frac": 0.005,
+     "largest_uncovered_mm2": 0.022,
+     "bead_width_min": 0.312,
+     "bead_width_max": 0.43,
+     "design_area_mm2": 9.1198,
+     "design_break_width_mm": 0.564,
+     "line": 2,
+     "verdict": "FINE"
+    },
+    "2_9": {
+     "extrusion_present": true,
+     "pieces": 1,
+     "design_pieces": 1,
+     "counters_design": 0,
+     "counters_kept": 0,
+     "counter_open_ratio": [],
+     "area_ratio": 0.994,
+     "uncovered_frac": 0.021,
+     "largest_uncovered_mm2": 0.0738,
+     "bead_width_min": 0.324,
+     "bead_width_max": 0.625,
+     "design_area_mm2": 10.7658,
+     "design_break_width_mm": 0.602,
+     "line": 2,
+     "verdict": "FINE"
+    }
+   }
+  }
+ },
+ "row2_ratio_range": [
+  0.994,
+  1.016
+ ],
+ "row_cap_mm": [
+  8.5,
+  5.5
+ ],
+ "worst_verdict": "FINE",
+ "ring_hole_open": true,
+ "pass": true,
+ "why": [
+  "pass"
+ ],
+ "text_calls": [
+  {
+   "seq": 16,
+   "command": "sketch.text",
+   "params": {
+    "text": "ALEX",
+    "at": [
+     29,
+     9
+    ],
+    "height": 8,
+    "bold": true,
+    "align": "center"
+   }
+  },
+  {
+   "seq": 16,
+   "command": "sketch.text",
+   "params": {
+    "text": "GYM BAG",
+    "at": [
+     29,
+     3
+    ],
+    "height": 4.5,
+    "bold": true,
+    "align": "center",
+    "letter_spacing": 0.3
+   }
+  },
+  {
+   "seq": 18,
+   "command": "sketch.text",
+   "params": {
+    "text": "ALEX",
+    "at": [
+     29,
+     9
+    ],
+    "height": 8,
+    "font": "C:\\Windows\\Fonts\\arialbd.ttf",
+    "align": "center"
+   }
+  },
+  {
+   "seq": 18,
+   "command": "sketch.text",
+   "params": {
+    "text": "GYM BAG",
+    "at": [
+     29,
+     3
+    ],
+    "height": 4.5,
+    "font": "C:\\Windows\\Fonts\\arialbd.ttf",
+    "align": "center",
+    "letter_spacing": 0.3
+   }
+  },
+  {
+   "seq": 20,
+   "command": "sketch.text",
+   "params": {
+    "text": "ALEX",
+    "at": [
+     29,
+     9.5
+    ],
+    "height": 8.5,
+    "align": "center"
+   }
+  },
+  {
+   "seq": 20,
+   "command": "sketch.text",
+   "params": {
+    "text": "GYM BAG",
+    "at": [
+     29,
+     2
+    ],
+    "height": 5.5,
+    "align": "center"
+   }
+  }
+ ],
+ "final_reply": "I built the keychain tag and saved it to `/lab/work/tag.solidcraft`. I looked at a top-view render of the model, and both rows of text sit inside the plate.\n\n- **Plate:** 50 × 20 mm and 2 mm thick, with a 4 mm key-ring hole on the left, centred 5.5 mm in from the edge.\n- **Text:** raised 1 mm, so the whole tag is 3 mm tall. The model is one solid.\n- **Row 1:** \"ALEX\", 8.5 mm cap height.\n- **Row 2:** \"GYM BAG\", 5.5 mm cap height.\n\nI sized the text for a 0.4 mm nozzle, but the strokes are thinner than I wanted. The built-in font has no bold face, and the sandbox wouldn't let me load a bold font file. So I made the letters larger instead. I estimate the \"ALEX\" strokes at about 1 mm and the \"GYM BAG\" strokes at about 0.7 mm. That's from font proportions, not measured on the model. \"GYM BAG\" is the weaker row. Slicing at 0.2 mm layers with a small line width should keep it clean, but check the preview before printing.\n\nI didn't export an STL or 3MF, since you only asked for the design file. The design was built in a headless session, so the SolidCraft window never showed it.",
+ "cost_usd": 0.1312989
+}

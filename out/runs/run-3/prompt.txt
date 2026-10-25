@@ -1,0 +1,1 @@
+Use the solidcraft MCP tools. Make a keychain tag 50 x 20 mm with the name ALEX and a smaller second row of text, GYM BAG, for a printer with a 0.4 mm nozzle. Save the design to /lab/work/tag.solidcraft.
