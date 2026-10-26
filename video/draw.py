@@ -290,7 +290,7 @@ def replies():
     for i, l in enumerate(q):
         text(f, 120, 200 + i * 110, l, 50, INK, ha='left')
     text(f, W / 2, 800, "the slicer's plan: within 2%", 54, GREEN)
-    text(f, W / 2, 900, 'guessed 5.5 mm · enough here: 3 mm', 48, INK)
+    text(f, W / 2, 900, 'they picked 5-5.5 mm · enough in our test: 3 mm', 44, INK)
     text(f, W / 2, 1110, 'quotes from each run\'s own reply', 38, GREY)
     save(f, 'card-replies.png')
 
@@ -303,7 +303,7 @@ def named():
     text(f, W / 2, 470, '2 mm  →  3 mm', 110, INK)
     text(f, W / 2, 700, 'one number moves the whole row', 54, INK)
     ok = nc.get('one_number_moves_the_row')
-    text(f, W / 2, 860, 'rebuilt = the 3 mm tag, exactly' if ok else '', 46, GREEN)
+    text(f, W / 2, 860, '= the 3 mm tag built directly' if ok else '', 46, GREEN)
     text(f, W / 2, 1110, 'set_parameter in SolidCraft (our lab check)', 38, GREY)
     save(f, 'card-named.png')
 
@@ -356,7 +356,7 @@ def engraved_card():
 
 engraved_card()
 card_simple('card-plan2.png', 'The plan: +44 to +56%', 'GYM BAG, 2 mm, one 0.38 mm line per stroke', 'raised-h2', 3.6, ROW2[2])
-card_simple('card-proof.png', 'Step 3: rebuilt at 3 mm', 'every counter open', 'raised-h3', 3.6, ROW2[3], footer='slicer plan, not a print')
+card_simple('card-proof.png', 'Step 3: built from scratch at 3 mm', 'every counter open', 'raised-h3', 3.6, ROW2[3], footer='slicer plan, not a print')
 strokes()
 lines()
 nozzle()
